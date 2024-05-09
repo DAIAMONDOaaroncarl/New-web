@@ -125,3 +125,182 @@
     margin:0 auto;    /*Para magitna ang lahat*/
     padding: .5rem;
   }
+
+  .header{
+    /* p3rem0 */
+    padding: 3rem 0;
+    /* bgc */
+    background-color: var(--dark);
+  }
+  
+  .header_wrapper{
+    /* df */
+    display: flex;
+    /* jc */
+    justify-content: space-between;
+  }
+  .header_left {
+    display: flex;
+    align-items: center;
+  }
+  .header_left img{
+    display: block;
+    width: 20rem;
+    background-color: var(--green);
+    width: 10rem;
+  }
+  .header_left h2{
+    display: flex;
+    color:var(--light);
+    font-size: 65px;
+    align-content: center;
+    margin-left: 35px;
+  }
+  .header_left h2 :hover{
+    color:var(--green);
+    
+  }
+  
+  .header_left ul{
+    display: flex;
+    /* ai */
+    align-items: center;
+    gap: 3rem;
+  }
+  .header_left ul li a{
+    color:var(--dark);
+  }
+  .header_left ul li a:hover{
+    color:var(--green);
+  }
+  .header_right{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 15px
+  }
+  
+ .header_right ul{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+  }
+  .header_right ul li a{
+    color:var(--light);
+  }
+  .header_right ul li a:hover{
+    color:var(--green);
+  } 
+
+.header_nav li{
+  display: inline-block;
+}
+.header_nav li::after{
+  content: " ";
+  width: 0px;
+  height: 2px;
+  background-color: var(--light);
+  transition: 400ms;
+  display: block;
+}
+.header_nav li:hover::after{
+  width: 100%;
+}
+
+/*BANNER*/
+
+.banner{
+  background-image: url(/img/GBG.jpg);
+  padding-top: 2rem;
+  background-size:cover;
+  height:100vh;
+  right: 100rem
+  
+  
+}
+
+.banner_wrapper{
+ display: flex;
+}
+.banner_left{
+  padding-left: 3rem;
+  padding-top: 15rem;
+}
+.banner_left small{
+  color: var(--light);
+  border: 10px;
+  border-color: var(--light);
+}
+.banner_left h1{
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: var(--light);
+}
+.banner_left span{
+  color:var(--green);
+}
+.banner_right{
+  position: relative;
+  /* p3rem0 */
+  padding: 3rem 3rem;
+padding-right: 10rem;
+padding-left: 10rem;
+
+  /* bgc */
+  background-color: var(--dark);
+  margin-top: -3rem;
+  margin-right: -10rem;
+  margin-left: -5rem;
+  border-top-left-radius:10rem ;
+  
+  
+}
+.banner_right img{
+  width:100rem;
+  height: 70rem;
+  color: var(--light);
+
+}
+
+   /* REPEATABLE PATTERNS */
+   :root{
+    --green: #7d9a68;
+    --light: #ffffff;
+    --dark: #2b2b2b;
+    --gray: #D3D3D3;
+    --poppins: "Poppins", "Sans-serif";
+  }
+  .btn{
+    background: transparent;
+    border: transparent;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    color: transparent;
+  }
+  .btnsq{
+    background: transparent;
+    border: transparent;
+    border-radius: 1rem;
+    padding: 1rem 2rem; 
+    color: transparent;
+  }
+  .btn.bg--border-dark{
+    background-color:var(--light);
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    
+  }
+  .btn.bg--border-light{
+    background-color:transparent;
+    border: 1px solid var(--light);
+    color: var(--light);
+    
+  }
+  .btnsq.bg--green{
+    background-color:var(--green);
+    border: 1px solid var(--green);
+    color: var(--light);
+    
+  }
